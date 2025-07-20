@@ -79,6 +79,29 @@ div.body {
     flex-direction: column;
 }
 
-div.form-container {
+p.first-element {margin-top: 10%;}
+
+div.body>p,
+div.form-container>form>* {
+    padding-left: 7%;
+}
+
+div.form-inputs {
     background-color: var(--gray-form);
+}
+
+div.body {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+div.body>div.form-container {
+    width: 100%;
+}
+
+div.form-inputs>div {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
 }
