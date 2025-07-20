@@ -38,12 +38,28 @@ div.img-container {
     width: max(350px, 40vw);
     overflow: clip;
     direction: rtl;
+    background: url(images/bg.jpg) no-repeat center right;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 div.img-container>img {
+    flex: none;
     height: 115vh;
     width: auto;
 }
+
+div.img-container>div.credit {
+    position: absolute;
+    bottom: 0.3rem;
+    font-size: 0.8rem;
+
+    color: white;
+}
+
+.credit a, .credit a:visited {color: white}
 
 div.body {
     display: flex;
