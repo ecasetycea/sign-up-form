@@ -86,9 +86,17 @@ div.form-container>form>* {
     padding-left: 7%;
 }
 
-div.form-inputs {
-    background-color: var(--gray-form);
+div.body>p {
+    width: 80%;
+    margin-bottom: 1rem;
+
+    font-size: 1.2rem;
+    font-weight: bold;
+    
+    line-height: 125%;
 }
+
+div.form-inputs {background-color: var(--gray-form);}
 
 div.body {
     display: flex;
@@ -96,9 +104,7 @@ div.body {
     align-items: flex-start;
 }
 
-div.body>div.form-container {
-    width: 100%;
-}
+div.body>div.form-container {width: 100%;}
 
 div.form-inputs>div {
     display: flex;
