@@ -45,7 +45,7 @@ div.img-container {
     align-items: center;
 }
 
-div.img-container>div.logo-container {
+div.img-container > div.logo-container {
     width: 100%;
     height: 120px;
     position: relative;
@@ -64,7 +64,7 @@ div.img-container>div.logo-container {
     color: white;
 }
 
-div.img-container>div.credit {
+div.img-container > div.credit {
     position: absolute;
     bottom: 0.3rem;
     font-size: 0.8rem;
@@ -81,12 +81,12 @@ div.body {
 
 p.first-element {margin-top: 10%;}
 
-div.body>p,
-div.form-container>form>* {
+div.body > p,
+div.form-container > form > * {
     padding-left: 7%;
 }
 
-div.body>p {
+div.body > p {
     width: 80%;
     margin-bottom: 1rem;
 
@@ -94,6 +94,20 @@ div.body>p {
     font-weight: bold;
     
     line-height: 125%;
+}
+
+div.body {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+div.body > div.form-container {width: 100%;}
+
+div.form-inputs > div {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
 }
 
 div.form-inputs {
@@ -105,19 +119,35 @@ div.form-inputs {
 
 div.form-inputs > * {margin-bottom: 1rem;}
 
-div.form-inputs>p {font-size: 1.3rem;}
+div.form-inputs > p {font-size: 1.3rem;}
 
-
-div.body {
+div.input-group {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
 }
 
-div.body>div.form-container {width: 100%;}
+div.input-group > label {
+    font-size: 0.7rem;
+}
 
-div.form-inputs>div {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
+div.input-group > input {
+    appearance: none;
+    height: 2rem;
+    padding-left: 0.5rem;
+
+    border: 2px solid var(--input-border-clr);
+    border-radius: 6px;
+}
+
+div.input-group > input:focus {
+    appearance: none;
+    outline: none;
+
+    border: 2px solid var(--selected-input-border-clr);
+}
+
+div.input-group > input:user-invalid {
+    appearance: none;
+    
+    border: 2px solid var(--invalid-input-border-clr);
 }
