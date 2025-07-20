@@ -211,5 +211,8 @@ p.login > a {
 /* SHADOWS */
 div.form-inputs,
 button.submit {
+    /* Damn firefox not applying shadow again */
+    -moz-box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+    -webkit-box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
 }
