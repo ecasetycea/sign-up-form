@@ -17,7 +17,7 @@
     --create-account-btn: #596D48;
     --input-border-clr: #E5E7EB;
     --invalid-input-border-clr: red;
-    --selected-input-border-clr: darkcyan;
+    --selected-input-border-clr: #44d;
     --logo-background: rgba(20, 20, 20, 0.5);
     --gray-background: #eee;
     --gray-form: #fafafa;
@@ -108,6 +108,7 @@ div.form-inputs > div {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
+    gap: 5rem;
 }
 
 div.form-inputs {
@@ -167,4 +168,4 @@ div.form-inputs > p.password-length {
     top: -0.8rem;
 }
 
-form:has(input:user-invalid) p.password-length {visibility: visible;}
+form:has(div.password input:user-invalid) p.password-length {visibility: visible;}
