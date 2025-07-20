@@ -35,10 +35,9 @@ body {
 
 div.img-container {
     flex: none;
-    width: max(300px, 40vw);
-    overflow: hidden;
-
-    position: relative;
+    width: max(350px, 40vw);
+    overflow: clip;
+    direction: rtl;
 }
 
 div.img-container>img {
