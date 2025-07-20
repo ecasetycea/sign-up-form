@@ -96,7 +96,17 @@ div.body>p {
     line-height: 125%;
 }
 
-div.form-inputs {background-color: var(--gray-form);}
+div.form-inputs {
+    background-color: var(--gray-form);
+    
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+div.form-inputs > * {margin-bottom: 1rem;}
+
+div.form-inputs>p {font-size: 1.3rem;}
+
 
 div.body {
     display: flex;
